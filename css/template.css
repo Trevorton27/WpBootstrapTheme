@@ -1,0 +1,16 @@
+
+/* Top Bar Section */
+.social-media-icons{
+	background: blue;
+	color: white;
+	height: 80px;
+}
+.search{
+	background: red;
+	height: 80px;
+	color: white;
+}
+
+.main-menu ul li, .footer-menu ul li{ 
+	display: inline;
+}
