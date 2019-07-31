@@ -24,6 +24,8 @@ function bstrpFour_config() {
 		'width'  => 1920
 	);
 	add_theme_support( 'custom-header', $args );
+	add_theme_support( 'post-thumbnails');
+	add_theme_support( 'post-formats', array('image', 'video') );
 }
 
 add_action( 'after_setup_theme', 'bstrpFour_config', 0);
