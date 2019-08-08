@@ -19,7 +19,7 @@ h4{ font-size: 18px; margin-top: 0; }
 .main-menu ul li{ display: inline;  margin: 0 30px 0 0;}
 .main-menu ul li:last-child{ margin: 0; }
 .main-menu ul li a{ text-transform: uppercase; color: #4c1b1b; text-decoration: none;}
-.main-menu ul  li.current-menu-item a{ color:#e58888; }
+.main-menu ul  li .current-menu-item a{ color:#e58888; }
 
 /* Slider */
 .slide{ padding: 25px 0; }
@@ -46,15 +46,16 @@ footer{ background: #000; padding: 15px 0; color: #fcfae1; }
 .footer-menu ul li{ display: inline;  margin: 0 15px 0 0;}
 .footer-menu ul li:last-child{ margin: 0; }
 .footer-menu ul li a{ color: #fcfae1;  text-decoration: none;}
-.footer-menu ul  li.current-menu-item a{ color:#e58888; }
+.footer-menu ul  li .current-menu-item a{ color:#e58888; }
 
 /* Blog */
-.wp-post-image{ float: left; margin: 0 15px 10px 0; }
-.format-image h2 { color: #fff; background: #717171; padding: 15px; }
-.format-video h2 { color: #fff; background: #211e1e; padding: 15px; }
-.format-standard h2 { color: #444; background: #d2d2d2; padding: 15px; }
+.wp-post-image{  margin: 0 15px 10px 0; }
+.format-image h2 { color: #fff; background: white; padding: 15px; }
+.format-video h2 { color: #fff; background: white; padding: 15px; }
+.format-standard h2 { color: #444; background: white; padding: 15px; }
 .blog article{ display: inline-block; margin: 0 0 30px; width: 100%; }
 .blog article h2{ margin-bottom: 15px; }
-.blog article p > img{ width: 100%; height: auto; }
+.blog article p  img{ width: 100%; height: auto; }
 .blog .meta-info p{ line-height: 1em; font-weight: bold; }
-.blog .meta-info  p > a{ color: #9d9d9d; font-weight: normal; }
+.meta-info p  a { color: darkslategray; font-weight: bolder; }
+.blog .meta-info ul li a { color: darkslategray; font-weight: bolder; }
