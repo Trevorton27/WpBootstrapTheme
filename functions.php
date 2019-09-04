@@ -1,4 +1,6 @@
 <?php 
+//Requiring Theme Customizer
+require get_template_directory() . '/inc/customizer.php';
 
 // Including stylesheet and script files
 function load_scripts(){
@@ -26,6 +28,7 @@ function bstrpFour_config() {
 	add_theme_support( 'custom-header', $args );
 	add_theme_support( 'post-thumbnails');
 	add_theme_support( 'post-formats', array('image', 'video') );
+	add_theme_support( 'title-tag');
 }
 
 add_action( 'after_setup_theme', 'bstrpFour_config', 0);
@@ -82,6 +85,17 @@ function bstrpFour_sidebars(){
 			'name' => 'Service 3',
 			'id' => 'services-3',
 			'description' => 'Third services area.',
+			'before_widget' => '<div class="widget-wrapper">',
+			'after_widget' => '</div>',
+			'before_title' => '<h2 class="widget-title"> ',
+			'after_title' => '</h2>'
+		)
+	);
+	register_sidebar(
+		array(
+			'name' => 'Social Media Icons',
+			'id' => 'social-media',
+			'description' => 'Social Media Icon Widget Area. Drag and drop your widgets here.',
 			'before_widget' => '<div class="widget-wrapper">',
 			'after_widget' => '</div>',
 			'before_title' => '<h2 class="widget-title"> ',

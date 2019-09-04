@@ -15,6 +15,12 @@
                     comments_template();
                 endif;
             endwhile;
+            the_posts_pagination(
+                array(
+                    'prev_text' => 'Previous',
+                    'next_text' => 'Next'
+                )
+            );
         else:
             ?>
             <h2>Well, golly. There are no posts available to be displayed.</h2>

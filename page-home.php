@@ -4,7 +4,7 @@
 		<main>\
 			<section class="slide">
 				<div class="container">
-					<div class="row">Slide</div>
+					<div class="row"><?php motoPressSlider( "home-slider" ) ?></div>
 				</div>
 			</section>		
 			<section class="services">
@@ -97,10 +97,14 @@
 				</div>	
 			</section>
 			<section class="map">
-				<div class="container">
-					<div class="row">Map</div>
-				</div>
+				<iframe
+					width="100%"
+					height="350"
+					frameborder="0" style="border:0"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.634007292698!2d134.53816485101308!3d34.0532582805105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35530d4e1bd13bdd%3A0x85c46f104bca2532!2zTSBDaXR5IEVuZ2xpc2gg6Iux6Kqe5pWZ5a6k!5e0!3m2!1sen!2sjp!4v1567505727541!5m2!1sen!2sjp" allowfullscreen>
+						</iframe>
 			</section>
 		</main>
 	</div>
 <?php get_footer(); ?>
+/*https://www.google.com/maps/embed/v1/place?key=AIzaSyD0kLPS-L1UmoGTeC-4lGjiGHSEHnybMwg&q=n&zoom=15*/
